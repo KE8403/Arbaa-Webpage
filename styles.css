@@ -1185,6 +1185,99 @@ p {
   border-bottom: 1px solid var(--line-dark);
 }
 
+.panel-actions {
+  margin-top: 28px;
+}
+
+.service-hero {
+  align-items: center;
+  color: var(--white);
+  display: grid;
+  min-height: 78vh;
+  overflow: hidden;
+  padding: 136px clamp(18px, 4.5vw, 72px) 82px;
+  position: relative;
+}
+
+.service-hero::after {
+  background: linear-gradient(90deg, rgba(35, 183, 229, 0.12), rgba(198, 164, 91, 0.2), transparent);
+  content: "";
+  height: 1px;
+  left: clamp(18px, 4.5vw, 72px);
+  position: absolute;
+  right: clamp(18px, 4.5vw, 72px);
+  top: 124px;
+}
+
+.service-hero > div {
+  max-width: 980px;
+  position: relative;
+  z-index: 1;
+}
+
+.cyber-service-hero {
+  background:
+    linear-gradient(108deg, rgba(7, 23, 42, 0.98), rgba(8, 31, 54, 0.92) 48%, rgba(7, 23, 42, 0.58)),
+    url("assets/pdf-page3-image2.jpg") center / cover;
+}
+
+.service-overview {
+  padding: 108px clamp(18px, 4.5vw, 72px);
+}
+
+.seo-content-grid {
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.seo-content-grid article {
+  border-right: 1px solid var(--line);
+  min-height: 330px;
+  padding: 34px 26px;
+}
+
+.seo-content-grid article:first-child {
+  border-left: 1px solid var(--line);
+}
+
+.seo-content-grid span {
+  color: var(--gold);
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+}
+
+.seo-content-grid p {
+  margin-bottom: 0;
+}
+
+.service-feature {
+  padding-block: 94px;
+}
+
+.service-use-list {
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.service-use-list span {
+  border-bottom: 1px solid var(--line);
+  color: var(--navy);
+  display: block;
+  font-size: clamp(1.05rem, 1.5vw, 1.26rem);
+  font-weight: 820;
+  line-height: 1.45;
+  padding: 22px clamp(22px, 3vw, 34px);
+}
+
+.service-use-list span:last-child {
+  border-bottom: 0;
+}
+
 .approach-section {
   background: var(--white);
 }
@@ -1325,7 +1418,8 @@ p {
   .mission-section,
   .approach-grid,
   .credibility-strip,
-  .mandate-grid {
+  .mandate-grid,
+  .seo-content-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1405,7 +1499,8 @@ p {
   .approach-section,
   .contact-section,
   .feature-band,
-  .explore-section {
+  .explore-section,
+  .service-overview {
     padding-block: 76px;
   }
 
@@ -1422,7 +1517,8 @@ p {
   }
 
   .page-tabs,
-  .mandate-grid {
+  .mandate-grid,
+  .seo-content-grid {
     grid-template-columns: 1fr;
   }
 

@@ -42,7 +42,9 @@ const siteNav = document.querySelector(".site-nav");
 const navLinks = document.querySelectorAll(".site-nav a");
 const viewButtons = document.querySelectorAll("[data-view]");
 const viewPanels = document.querySelectorAll("[data-panel-view]");
-let currentView = "profile";
+const requestedView = new URLSearchParams(window.location.search).get("view");
+const availableViews = new Set([...viewButtons].map((button) => button.dataset.view));
+let currentView = availableViews.has(requestedView) ? requestedView : "profile";
 
 function closeMenu() {
   document.body.classList.remove("nav-open");
