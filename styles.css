@@ -1221,6 +1221,12 @@ p {
     url("assets/pdf-page3-image2.jpg") center / cover;
 }
 
+.ai-service-hero {
+  background:
+    linear-gradient(108deg, rgba(7, 23, 42, 0.98), rgba(8, 31, 54, 0.9) 48%, rgba(11, 57, 88, 0.58)),
+    url("assets/pdf-page2-image1.jpg") center / cover;
+}
+
 .service-overview {
   padding: 108px clamp(18px, 4.5vw, 72px);
 }
