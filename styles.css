@@ -282,6 +282,14 @@ p {
   color: var(--white);
 }
 
+.section-actions {
+  margin-top: 28px;
+}
+
+.section-actions .button.primary {
+  color: #171105;
+}
+
 .hero-visual {
   min-height: 540px;
   transform:
@@ -1237,6 +1245,12 @@ p {
   background:
     linear-gradient(108deg, rgba(7, 23, 42, 0.98), rgba(8, 31, 54, 0.9) 48%, rgba(7, 23, 42, 0.58)),
     url("assets/pdf-page3-image1.jpg") center / cover;
+}
+
+.transformation-service-hero {
+  background:
+    linear-gradient(108deg, rgba(7, 23, 42, 0.98), rgba(8, 31, 54, 0.9) 48%, rgba(7, 23, 42, 0.62)),
+    url("assets/pdf-page4-image1.jpg") center / cover;
 }
 
 .service-overview {
