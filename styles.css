@@ -1296,8 +1296,88 @@ p {
     url("assets/pdf-page4-image1.jpg") center / cover;
 }
 
+.disaster-service-hero {
+  background:
+    linear-gradient(108deg, rgba(7, 23, 42, 0.98), rgba(8, 31, 54, 0.9) 48%, rgba(11, 57, 88, 0.58)),
+    url("assets/pdf-page2-image1.jpg") center / cover;
+}
+
 .service-overview {
   padding: 108px clamp(18px, 4.5vw, 72px);
+}
+
+.highlight-use-case {
+  background: var(--white);
+  border-top: 1px solid var(--line);
+}
+
+.insight-body {
+  background: var(--paper);
+}
+
+.insight-body section {
+  border-bottom: 1px solid var(--line);
+  padding: 92px clamp(18px, 4.5vw, 72px);
+}
+
+.insight-body section > p:not(.eyebrow),
+.insight-body section > h2 {
+  max-width: 940px;
+}
+
+.insight-points,
+.insight-link-panel {
+  background: var(--white);
+  border: 1px solid var(--line);
+  margin-top: 34px;
+}
+
+.insight-points {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.insight-points span {
+  border-right: 1px solid var(--line);
+  color: var(--navy);
+  font-weight: 820;
+  line-height: 1.45;
+  min-height: 150px;
+  padding: 24px;
+}
+
+.insight-points span:last-child {
+  border-right: 0;
+}
+
+.insight-grid {
+  margin-top: 34px;
+}
+
+.insight-link-panel {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  padding: 28px;
+}
+
+.insight-link-panel span {
+  color: var(--gold);
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.insight-link-panel strong {
+  color: var(--navy);
+  display: block;
+  font-size: clamp(1.22rem, 2vw, 1.75rem);
+  line-height: 1.18;
+  max-width: 780px;
 }
 
 .seo-content-grid {
@@ -1495,8 +1575,14 @@ p {
   .credibility-strip,
   .mandate-grid,
   .seo-content-grid,
-  .service-directory {
+  .service-directory,
+  .insight-points {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .insight-link-panel {
+    align-items: start;
+    flex-direction: column;
   }
 
   .service-directory a {
@@ -1580,7 +1666,8 @@ p {
   .contact-section,
   .feature-band,
   .explore-section,
-  .service-overview {
+  .service-overview,
+  .insight-body section {
     padding-block: 76px;
   }
 
@@ -1599,8 +1686,19 @@ p {
   .page-tabs,
   .mandate-grid,
   .seo-content-grid,
-  .service-directory {
+  .service-directory,
+  .insight-points {
     grid-template-columns: 1fr;
+  }
+
+  .insight-points span {
+    border-bottom: 1px solid var(--line);
+    border-right: 0;
+    min-height: auto;
+  }
+
+  .insight-points span:last-child {
+    border-bottom: 0;
   }
 
   .service-directory a {
