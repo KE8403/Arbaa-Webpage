@@ -1302,6 +1302,12 @@ p {
     url("assets/pdf-page2-image1.jpg") center / cover;
 }
 
+.siaga-service-hero {
+  background:
+    linear-gradient(108deg, rgba(7, 23, 42, 0.98), rgba(8, 31, 54, 0.91) 48%, rgba(7, 23, 42, 0.58)),
+    url("assets/pdf-page3-image1.jpg") center / cover;
+}
+
 .service-overview {
   padding: 108px clamp(18px, 4.5vw, 72px);
 }
@@ -1360,6 +1366,10 @@ p {
   gap: 24px;
   justify-content: space-between;
   padding: 28px;
+}
+
+.secondary-link-panel {
+  margin-top: 14px;
 }
 
 .insight-link-panel span {
