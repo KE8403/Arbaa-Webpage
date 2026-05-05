@@ -1197,6 +1197,49 @@ p {
   margin-top: 28px;
 }
 
+.service-directory {
+  background: var(--white);
+  border: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.service-directory a {
+  border-right: 1px solid var(--line);
+  display: grid;
+  gap: 12px;
+  min-height: 176px;
+  padding: 24px 20px;
+  transition:
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.service-directory a:last-child {
+  border-right: 0;
+}
+
+.service-directory a:hover {
+  background: #f8fbfd;
+  transform: translateY(-2px);
+}
+
+.service-directory span {
+  color: var(--gold);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.service-directory strong {
+  color: var(--navy);
+  font-size: 0.98rem;
+  line-height: 1.42;
+}
+
 .service-hero {
   align-items: center;
   color: var(--white);
@@ -1451,8 +1494,13 @@ p {
   .approach-grid,
   .credibility-strip,
   .mandate-grid,
-  .seo-content-grid {
+  .seo-content-grid,
+  .service-directory {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service-directory a {
+    border-bottom: 1px solid var(--line);
   }
 
   .page-tabs {
@@ -1550,8 +1598,13 @@ p {
 
   .page-tabs,
   .mandate-grid,
-  .seo-content-grid {
+  .seo-content-grid,
+  .service-directory {
     grid-template-columns: 1fr;
+  }
+
+  .service-directory a {
+    border-right: 0;
   }
 
   .view-panel {
