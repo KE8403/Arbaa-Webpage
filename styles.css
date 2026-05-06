@@ -1443,6 +1443,31 @@ p {
   border-bottom: 0;
 }
 
+.source-list {
+  background: var(--white);
+  border: 1px solid var(--line);
+  display: grid;
+  margin-top: 34px;
+}
+
+.source-list a {
+  border-bottom: 1px solid var(--line);
+  color: var(--navy);
+  display: block;
+  font-weight: 760;
+  line-height: 1.45;
+  padding: 22px 24px;
+  text-decoration: none;
+}
+
+.source-list a:hover {
+  color: var(--sky);
+}
+
+.source-list a:last-child {
+  border-bottom: 0;
+}
+
 .approach-section {
   background: var(--white);
 }
