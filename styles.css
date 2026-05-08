@@ -1511,6 +1511,124 @@ p {
   width: 100%;
 }
 
+.insights-hero {
+  align-items: end;
+  background:
+    linear-gradient(105deg, rgba(7, 23, 42, 0.98), rgba(9, 34, 56, 0.9) 52%, rgba(13, 94, 134, 0.44)),
+    url("assets/pdf-page3-image1.jpg") center / cover;
+  color: var(--white);
+  display: grid;
+  min-height: 76vh;
+  padding: 150px clamp(18px, 4.5vw, 72px) 82px;
+}
+
+.insights-hero h1,
+.insights-hero p {
+  color: var(--white);
+}
+
+.insights-hero > div {
+  max-width: 980px;
+}
+
+.insights-section {
+  background: var(--paper);
+  padding: 104px clamp(18px, 4.5vw, 72px);
+}
+
+.muted-insights {
+  background: var(--white);
+  border-top: 1px solid var(--line);
+}
+
+.featured-insight {
+  background: var(--white);
+  border: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  margin-top: 34px;
+}
+
+.featured-insight img {
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.featured-insight div {
+  align-content: center;
+  display: grid;
+  padding: clamp(30px, 5vw, 64px);
+}
+
+.featured-insight span,
+.insights-grid span {
+  color: var(--gold);
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.featured-insight h3 {
+  color: var(--navy);
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 0.96;
+  margin: 0 0 24px;
+}
+
+.featured-insight p {
+  max-width: 720px;
+}
+
+.featured-insight .button {
+  justify-self: start;
+  margin-top: 12px;
+}
+
+.insights-grid {
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 34px;
+}
+
+.insights-grid article {
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  min-height: 310px;
+  padding: 30px 26px;
+}
+
+.insights-grid article:first-child {
+  border-left: 1px solid var(--line);
+}
+
+.insights-grid h3 {
+  color: var(--navy);
+  font-size: clamp(1.32rem, 2vw, 2rem);
+  line-height: 1.1;
+  margin: 0 0 18px;
+}
+
+.insights-grid p {
+  margin-bottom: 28px;
+}
+
+.insights-grid a {
+  color: var(--sky);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.capability-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .feature-band h2,
 .feature-band p {
   color: var(--white);
@@ -1586,6 +1704,7 @@ p {
   .service-console,
   .tab-panel,
   .feature-band,
+  .featured-insight,
   .contact-section {
     grid-template-columns: 1fr;
   }
@@ -1611,7 +1730,9 @@ p {
   .mandate-grid,
   .seo-content-grid,
   .service-directory,
-  .insight-points {
+  .insight-points,
+  .insights-grid,
+  .capability-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1700,6 +1821,7 @@ p {
   .approach-section,
   .contact-section,
   .feature-band,
+  .insights-section,
   .explore-section,
   .service-overview,
   .insight-body section {
@@ -1722,8 +1844,14 @@ p {
   .mandate-grid,
   .seo-content-grid,
   .service-directory,
-  .insight-points {
+  .insight-points,
+  .insights-grid,
+  .capability-grid {
     grid-template-columns: 1fr;
+  }
+
+  .featured-insight img {
+    min-height: 260px;
   }
 
   .insight-points span {
